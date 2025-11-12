@@ -89,7 +89,7 @@ This phase confirms that the target system was scanned and vulnerable points wer
     ![Nmap Port Scan Showing Open Ports](screenshots/nmap-scan.png)
 
 * **Nikto Vulnerability Scan:** Confirms the vulnerable services running on the web server, identifying specific, known weaknesses on the target IP (192.168.1.101).
-    ![Nikto Vulnerability Scan Output](screenshots/nikito-scan.jpg)
+    ![Nikto Vulnerability Scan Output](screenshots/nikito-scan.png)
 
 * **Burp Suite Intruder Attack:** Shows the execution of the attack on the target's login page, demonstrating the ability to manually test for vulnerabilities and manipulate network traffic.
     ![Burp Suite Intruder Attack on Target Login](screenshots/burpsuite.png)
@@ -99,14 +99,14 @@ This phase confirms that the target system was scanned and vulnerable points wer
 This section provides the central proof of the attack's success, confirming the database vulnerability was leveraged to extract critical data.
 
 * **SQLmap Database Extraction:** Confirms the success of the SQL injection by showing the names of the databases that were successfully extracted from the vulnerable application.
-    ![SQLmap Output Showing Extracted Database Names](screenshots/sqlmap-databases.jpg)
+    ![SQLmap Output Showing Extracted Database Names](screenshots/sqlmap-databases.png)
 
 ### 3. Post-Exploitation (Tool: John the Ripper)
 
 This phase showcases advanced Red Team skills in cracking stolen credentials for potential subsequent access or lateral movement within the network.
 
 * **Hash Cracking (John the Ripper):** Shows a stolen password hash (from the vulnerable application) being successfully cracked against a wordlist, confirming the viability of the exfiltrated credential data.
-    ![John the Ripper Cracking Stolen Password Hash](screenshots/JTR-Hash-Crack.jpg)
+    ![John the Ripper Cracking Stolen Password Hash](screenshots/JTR-Hash-Crack.png)
 
 ### 4. Blue Team Detection and Analysis (Tools: Snort, Wazuh SIEM)
 
@@ -116,7 +116,7 @@ This final phase validates the defensive architecture, proving that monitoring t
     ![Snort and Wazuh Dashboards Confirming SQLi Detection](screenshots/Snort-Wazzuh.png)
 
 * **Wazuh MITRE ATT&CK Breakdown:** Confirms the SIEM provided a sophisticated, high-level analysis of the attack, automatically mapping the event to the correct MITRE ATT&CK tactics (e.g., Initial Access, Execution).
-    ![Wazuh MITRE ATTACK Breakdown of Attack](screenshots/wazzuh mitre.png)
+    ![Wazuh MITRE ATT&CK Breakdown of Attack](screenshots/wazzuh_mitre.png)
 
 ---
 
