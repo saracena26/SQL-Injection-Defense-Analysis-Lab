@@ -11,7 +11,7 @@ Red Team / Blue Team Lab simulating a full **SQL Injection (SQLi)** attack again
 
 The comprehensive technical analysis, detailed methodology, and full findings for this project are available in the official report.
 
-**[➡️ Download Full Project Report (PDF)](documentation/Aracena-Baez_tkh_if_cse_p1_end_project_report.pdf)**
+**[➡️ Download Full Project Report (PDF)](documentation/SQL_Injection_Defense_&_Analysis_Lab.pdf)**
 
 ## 💡 Skills Demonstrated
 
